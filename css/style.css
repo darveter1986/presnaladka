@@ -478,3 +478,16 @@ a.button:active,
     text-align: center;
     font-size: 22px;
 }
+.btn-print {
+    padding: 5px;
+    background: red;
+    font-size: 20px;
+    border: 2px solid red;
+}
+.btn-print:hover {
+    border: 2px solid black;
+}
+.price_contact {
+    display: none;
+}
+
