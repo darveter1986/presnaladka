@@ -457,12 +457,16 @@ a.button:active,
 }
 
 /*2016-2017*/
+.sport img,
 .new_year img {
     width: 780px;
 }
 .new_year p {
     font-size: 26px;
     color: red;
+}
+.sport p {
+
 }
 .col_100.main_title {
     font-size: 15px;
@@ -490,4 +494,9 @@ a.button:active,
 .price_contact {
     display: none;
 }
-
+.flagi {
+    list-style-type: decimal;
+}
+.sport h2 {
+    font-size: 24px;
+}
