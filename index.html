@@ -1,65 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="uk">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виробниче підприємство "Контакт"</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="css/style031016.css">
-    <title></title>
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <script>
-        window["_GOOG_TRANS_EXT_VER"] = "1";
-    </script>
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
-              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-              crossorigin="anonymous">
-    </script>
-    <!-- jsDeliver -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.plugins.min.js"></script>
-
-    <script type="text/javascript">
-
-        function PrintElem(elem, title)
-        {
-            Popup($(elem).html(), title);
-        }
-
-        function Popup(data, title)
-        {
-            var mywindow = window.open('', title);
-            mywindow.document.write('<html><head><title>' + title +'</title>');
-            /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
-            mywindow.document.write('</head><body >');
-            mywindow.document.write(data);
-            mywindow.document.write('</body></html>');
-            var htmlToPrint = '' +
-                    '<style type="text/css">' +
-                    'table th, table td {' +
-                    'border:1px solid #000;' +
-                    'padding;0;' +
-                    '}' +
-                    'table { border-collapse:collapse; border-spacing:0; font-size: 13px }' +
-                    'td:nth-of-type(2) {width: 10px;}' +
-                    'td:nth-of-type(n + 2) {text-align: center}' +
-                    'tr:nth-child(even) {background:#F2F2F2;}' +
-                    '.btn-print {display: none}' +
-                    '.price_contact p {margin: 0;padding: 0;}' +
-                    '.price_contact {margin-top: 10px;}' +
-                    '</style>';
-            mywindow.document.write(htmlToPrint);
-            mywindow.document.close(); // necessary for IE >= 10
-            mywindow.focus(); // necessary for IE >= 10
-
-            mywindow.print();
-            mywindow.close();
-
-            return true;
-        }
-
-    </script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.plugins.min.js"></script>
+    <script src="js/print.js"></script> <!-- Винесений JS код -->
 </head>
 
 <body>
@@ -102,7 +56,14 @@
         <div class="new_year">
         <article class="article clearfix">
             <div class="col_100">
-                <img class="lazy" data-src="./image/buklet_2021-2022.jpg" >
+                <img class="lazy" data-src="./image/buklet_2021-2024.jpg" >
+            </div>
+        </article>
+
+        <article class="article clearfix ">
+            <div class="col_100 ">
+                <img class="lazy" data-src="./image/dragon2024.jpg" >
+                <p>"Рік Дракона" 500гр</p>
             </div>
         </article>
 
@@ -148,7 +109,7 @@
         <article class="article clearfix ">
             <div class="col_100 ">
                 <img class="lazy" data-src="./image/goroskop_2019.png" >
-                <p>"Зодіак" 500гр</p>
+                <p>"Східний Зодіак" 500гр</p>
             </div>
         </article>
         <article class="article clearfix ">
@@ -277,133 +238,141 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td>Рік Дракона</td>
+                        <td rowspan="17">Повнокольоровий друк, тиснення фольгою, УФ-лак</td>
+                        <td>87х87</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>49.00</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
                         <td>Дід Мороз</td>
-                        <td rowspan="16">Повнокольоровий друк, тиснення фольгою, УФ-лак</td>
                         <td>67</td>
                         <td>165</td>
                         <td>250-270</td>
-                        <td>31.00</td>
-                        <td>29.00</td>
+                        <td>34.00</td>
+                        <td>32.00</td>
                     </tr>
                     <tr>
                         <td>Дід Мороз (Україна)</td>
                         <td>67</td>
                         <td>165</td>
                         <td>250-270</td>
-                        <td>31.00</td>
-                        <td>29.00</td>
+                        <td>34.00</td>
+                        <td>32.00</td>
                     </tr>
                     <tr>
                         <td>Дід Мороз</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500-550</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>Дід Мороз (Україна)</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500-550</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>Дід Мороз</td>
                         <td>117</td>
                         <td>240</td>
                         <td>1000-1100</td>
-                        <td>55.00</td>
-                        <td>53.00</td>
+                        <td>58.00</td>
+                        <td>56.00</td>
                     </tr>
                     <tr>
                         <td>Снігуронька</td>
                         <td>67</td>
                         <td>165</td>
                         <td>250-270</td>
-                        <td>31.00</td>
-                        <td>29.00</td>
+                        <td>34.00</td>
+                        <td>32.00</td>
                     </tr>
                     <tr>
                         <td>Снігуронька</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500-550</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>Снігуронька</td>
                         <td>117</td>
                         <td>240</td>
                         <td>1000-1100</td>
-                        <td>55.00</td>
-                        <td>53.00</td>
+                        <td>58.00</td>
+                        <td>56.00</td>
                     </tr>
                     <tr>
                         <td>Сніговик у капелюсі</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500-550</td>
-                        <td>43.00</td>
-                        <td>41.00</td>
+                        <td>46.00</td>
+                        <td>44.00</td>
                     </tr>
                     <tr>
                         <td>"Вітаємо!"</td>
                         <td>87</td>
                         <td>140</td>
                         <td>300</td>
-                        <td>31.00</td>
-                        <td>29.00</td>
+                        <td>34.00</td>
+                        <td>32.00</td>
                     </tr>
                     <tr>
                         <td>Карандаш</td>
                         <td>67</td>
                         <td>165</td>
                         <td>250-270</td>
-                        <td>31.00</td>
-                        <td>29.00</td>
+                        <td>34.00</td>
+                        <td>32.00</td>
                     </tr>
                     <tr>
                         <td>Новорічний Олівець-скарбничка</td>
                         <td>67</td>
                         <td>300</td>
                         <td>450-500</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>Новорічна</td>
                         <td>60х100</td>
                         <td>210</td>
                         <td>450-550</td>
-                        <td>46.00</td>
-                        <td>44.00</td>
+                        <td>49.00</td>
+                        <td>47.00</td>
                     </tr>
                     <tr>
                         <td>Свіяткові приготування</td>
                         <td>87х87</td>
                         <td>180</td>
                         <td>500</td>
-                        <td>46.00</td>
-                        <td>44.00</td>
+                        <td>49.00</td>
+                        <td>47.00</td>
                     </tr>
                     <tr>
-                        <td>Зодіак</td>
+                        <td>Східний Зодіак</td>
                         <td>87х87</td>
                         <td>180</td>
                         <td>500</td>
-                        <td>46.00</td>
-                        <td>44.00</td>
+                        <td>49.00</td>
+                        <td>47.00</td>
                     </tr>
                     <tr>
                         <td>Зодіак</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>“Санта Клаус” з прозорою кришкою висотою  20 мм.</td>
@@ -411,32 +380,32 @@
                         <td>117</td>
                         <td>240</td>
                         <td>1000-1200</td>
-                        <td>57.00</td>
-                        <td>55.00</td>
+                        <td>60.00</td>
+                        <td>58.00</td>
                     </tr>
                     <tr>
                         <td>“Санта Клаус з двома прозорими кришками</td>
                         <td>117</td>
                         <td>240</td>
                         <td>1000-1200</td>
-                        <td>62.00</td>
-                        <td>60.00</td>
+                        <td>65.00</td>
+                        <td>63.00</td>
                     </tr>
                     <tr>
                         <td>“Снігова Королева” з прозорою кришкою висотою 20 мм.</td>
                         <td>117</td>
                         <td>360</td>
                         <td>1500-1700</td>
-                        <td>69.00</td>
-                        <td>67.00</td>
+                        <td>72.00</td>
+                        <td>70.00</td>
                     </tr>
                     <tr>
                         <td>“Снігова Королева” з двома прозорими кришками</td>
                         <td>117</td>
                         <td>360</td>
                         <td>1500-1700</td>
-                        <td>73.00</td>
-                        <td>71.00</td>
+                        <td>76.00</td>
+                        <td>74.00</td>
                     </tr>
                     <tr>
                         <td>“Новорічний танок” з прозорою кришкою висотою 20 мм.</td>
@@ -444,24 +413,24 @@
                         <td>117</td>
                         <td>240</td>
                         <td>1000-1200</td>
-                        <td>57.00</td>
-                        <td>55.00</td>
+                        <td>60.00</td>
+                        <td>58.00</td>
                     </tr>
                     <tr>
                         <td>“Новорічний танок” з двома прозорими кришками</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500</td>
-                        <td>62.00</td>
-                        <td>60.00</td>
+                        <td>65.00</td>
+                        <td>63.00</td>
                     </tr>
                     <tr>
                         <td>Святкові гуляння</td>
                         <td>87</td>
                         <td>205</td>
                         <td>500</td>
-                        <td>39.00</td>
-                        <td>37.00</td>
+                        <td>42.00</td>
+                        <td>40.00</td>
                     </tr>
                     <tr>
                         <td>Ланч-бокс</td>
@@ -469,8 +438,8 @@
                         <td>173х127</td>
                         <td>68</td>
                         <td>300-400</td>
-                        <td>62.00</td>
-                        <td>60.00</td>
+                        <td>65.00</td>
+                        <td>63.00</td>
                     </tr>
                     <tr>
                         <td>Ланч-бокс</td>
@@ -478,8 +447,8 @@
                         <td>173х127</td>
                         <td>68</td>
                         <td>300-400</td>
-                        <td>48.00</td>
-                        <td>46.00</td>
+                        <td>51.00</td>
+                        <td>49.00</td>
                     </tr>
                     <tr>
                         <td>Кулька</td>
@@ -487,13 +456,13 @@
                         <td>80</td>
                         <td>-</td>
                         <td>50-100</td>
-                        <td>14.00</td>
-                        <td>12.00</td>
+                        <td>17.00</td>
+                        <td>15.00</td>
                     </tr>
                     </tbody>
                 </table>
                 <p><b>Упаковка з двома прозорими кришками може поставлятися з однією пласкою прозорою кришкою. В такому разі ціна упаковки діаметром 87 мм буде меншою на 3,50 грн, а діаметром 117 мм на 5,00 грн.</b></p>
-                <button class="btn-print" type="button" onclick="PrintElem('#price_new_year', 'presnaladka_com_ua_Price_New_Year_2019-2020')" >
+                <button class="btn-print" type="button" onclick="printElementContent('price_new_year', 'presnaladka_com_ua_Price_New_Year_2023-2024')" >
                     <span>Друкувати прайс</span>
                 </button>
             </div>
@@ -741,7 +710,7 @@
                 </table>
                 <p><b></b></p>
             </div>
-            <button class="btn-print" type="button" onclick="PrintElem('#price_sport', 'presnaladka_com_ua_Price_Sport_Atributika_2019-2020')" >
+            <button class="btn-print" type="button" onclick="printElementContent('price_sport', 'presnaladka_com_ua_Price_Sport_Atributika_2019-2020')" >
                 <span>Друкувати прайс</span>
             </button>
             <div class="price_contact" style="float: left">
@@ -855,7 +824,7 @@
                 </table>
                 <p><b></b></p>
             </div>
-            <button class="btn-print" type="button" onclick="PrintElem('#price_goods', 'presnaladka_com_ua_Price_Goods_2019')" >
+            <button class="btn-print" type="button" onclick="printElementContent('price_goods', 'presnaladka_com_ua_Price_Goods_2019')" >
                 <span>Друкувати прайс</span>
             </button>
             <div class="price_contact" style="float: left">
@@ -869,7 +838,7 @@
     </div>
 
     <footer class="footer clearfix ">
-        <div class="copyright ">presnaladka.com.ua - 2001-2022</div>
+        <div class="copyright ">presnaladka.com.ua - 2001-2024</div>
     </footer>
 </div>
 <script type="text/javascript">
