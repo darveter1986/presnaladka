@@ -52,7 +52,7 @@ table { border-collapse:collapse; border-spacing:0; }
 /* End CSS reset */
 
 
-/* Columns 
+/* Columns
 -------
 .col_33 | .col_33 | .col_33
 .clearfix
@@ -151,7 +151,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 .info {
-  
+
   padding:0 1% 1em 1%;
 }
 
@@ -232,7 +232,7 @@ ul li, ol li {
   -moz-box-shadow:#8b8b8b 0px 0px 3px;
   box-shadow:#8b8b8b 0px 0px 3px;
   padding:15px 0 15px 2%;
-  
+
 }
 
 h1, h2, h3, h4 {
@@ -255,7 +255,7 @@ h1 {
 a.button,
 .button {
   border:0;
-  text-align:center; 
+  text-align:center;
   text-decoration:none;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
@@ -278,7 +278,7 @@ a.button,
 }
 a.button:hover,
 .button:hover {
-  color:#fff;  
+  color:#fff;
   background:-webkit-gradient(linear, 0 0, 0 bottom, from(#4aa6d6), to(#1f7daa));
   background:-webkit-linear-gradient(#4aa6d6, #1f7daa);
   background:-moz-linear-gradient(#4aa6d6, #1f7daa);
@@ -384,7 +384,7 @@ a.button:active,
     text-align:center;
     padding:0;
   }
-  
+
   .menu_main {
     width:100%;
     text-align:center;
@@ -392,12 +392,12 @@ a.button:active,
     padding:0;
     margin:1em 0 0 0;
   }
-  
+
   .menu_main a {
     display:inline-block;
     padding:7px;
   }
-  
+
   .copyright {
     width:100%;
     float:none;
@@ -407,22 +407,22 @@ a.button:active,
   .footer  {
     padding-bottom:0;
   }
-  
+
   .menu_bottom {
     width:100%;
     float:none;
     text-align:center;
     margin:1em 0 0 0;
     padding:0;
-  }  
+  }
   .menu_bottom a {
     display:inline-block;
     padding:6px;
   }
-  
+
   .form textarea {
     width:100%;
-  }  
+  }
   .form label {
     padding:10px 0 8px 0;
   }
@@ -435,8 +435,8 @@ a.button:active,
   .col_50  {
     width:98%;
     float:none;
-  } 
-  
+  }
+
   .form label {
     padding:10px 0 8px 0;
   }
@@ -455,15 +455,17 @@ a.button:active,
   @page { margin:0.5cm; }
   p, h2, h3 { orphans:3; widows:3; }
   h2, h3{ page-break-after:avoid; }
-  
+
   .header, .footer, .form {display:none;}
-  .col_33, .col_66, .col_50  { width:98%; float:none; } 
+  .col_33, .col_66, .col_50  { width:98%; float:none; }
 }
 
 /*2016-2017*/
 .sport img,
 .new_year img {
-    width: 780px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .new_year p {
     font-size: 26px;
