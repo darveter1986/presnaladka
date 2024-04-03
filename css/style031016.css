@@ -506,3 +506,19 @@ a.button:active,
 .sport h2 {
     font-size: 24px;
 }
+
+/* Стиль для екранів з шириною менше 560px */
+@media (max-width: 560px) {
+  .article {
+    padding: 0;
+  }
+  .table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    font-size: 8px; /* Зменшіть розмір шрифту */
+  }
+  .table td {
+    padding: 4px 0;
+  }
+}
